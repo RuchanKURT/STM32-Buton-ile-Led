@@ -107,7 +107,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  if(HAL_GPIO_ReadPin(Led_GPIO_Port, Led_Pin)){
+	  if(HAL_GPIO_ReadPin(Led_GPIO_Port, Led_Pin))
+	  {
 		  buton1.led_durumu = open;
 	  }
 	  else
@@ -115,7 +116,8 @@ int main(void)
 		  buton1.led_durumu = close;
 	  }
 
-	  if(HAL_GPIO_ReadPin(Buton_GPIO_Port, Buton_Pin)){
+	  if(HAL_GPIO_ReadPin(Buton_GPIO_Port, Buton_Pin))
+	  {
 		  buton1.buton_durumu = open;
 	  }
 	  else
