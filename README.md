@@ -26,13 +26,13 @@ buton buton1;
 ![alt text](https://github.com/RuchanKURT/STM32-Buton-ile-Led/blob/main/düşen_yükselen_Kenar.png)
 ```C
 if(HAL_GPIO_ReadPin(Buton_GPIO_Port, Buton_Pin))
-	  {
-		  HAL_Delay(15);
-		  if(HAL_GPIO_ReadPin(Buton_GPIO_Port, Buton_Pin) == 0)
-		  {
-			  HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
-			  HAL_Delay(300);
-		  }
-	  }
+{
+	HAL_Delay(15);
+	if(HAL_GPIO_ReadPin(Buton_GPIO_Port, Buton_Pin) == 0)
+	{
+		HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
+		HAL_Delay(300);
+	}
+}
 ```
-Bu işlemlerin yanında struct yapımızın içindeki değişkenlerimizde o anki duruma göre if-else komutları sayesinde değişiklik gösteriyor. Program bu şekilde hem buton ile kart üzerinde bulunan ledi kontrol etmemizi hem de bu durumların karşılığını anlık olarak CUBEIDE programı üzerinden okuyabilmemizi sağlıyor. 
+Bu işlemlerin yanında struct yapımızın içindeki değişkenlerimizde o anki duruma göre if-else komutları sayesinde değişiklik gösteriyor. Program bu şekilde hem buton ile kart üzerinde bulunan ledi kontrol etmemizi hem de bu durumların karşılığını anlık olarak CUBEIDE programı üzerinden okuyabilmemizi sağlıyor.
