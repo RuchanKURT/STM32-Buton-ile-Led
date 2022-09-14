@@ -101,7 +101,6 @@ int main(void)
   /* USER CODE BEGIN 2 */
   strcpy(buton1.buton_PinAdi,"GPIO_PIN_1");
   strcpy(buton1.buton_PortAdi,"GPIOB");
-//  buton1.buton_durumu = HAL_GPIO_ReadPin(Buton_GPIO_Port, Buton_Pin);
   /* USER CODE END 2 */
 
   /* Infinite loop */
